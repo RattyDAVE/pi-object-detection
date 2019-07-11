@@ -26,6 +26,9 @@ tar -xzvf ssdlite_mobilenet_v2_coco_2018_05_09.tar.gz
 #wget http://download.tensorflow.org/models/object_detection/faster_rcnn_resnet101_kitti_2018_01_28.tar.gz
 #tar -xzvf faster_rcnn_resnet101_kitti_2018_01_28.tar.gz
 
+#wget http://download.tensorflow.org/models/object_detection/facessd_mobilenet_v2_quantized_320x320_open_image_v4.tar.gz
+#tar -xzvf facessd_mobilenet_v2_quantized_320x320_open_image_v4
+
 echo "export PYTHONPATH=$PYTHONPATH:~/tensorflow1/models/research:~/tensorflow1/models/research/slim" >> ~/.bashrc
 export PYTHONPATH=$PYTHONPATH:~/tensorflow1/models/research:~/tensorflow1/models/research/slim
 
