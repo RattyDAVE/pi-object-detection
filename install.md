@@ -1,3 +1,5 @@
+```
+
 sudo apt update -y
 sudo apt upgrade -y
 sudo rpi-update 
@@ -43,3 +45,4 @@ PATH_TO_LABLES =
 NUM_CLASSES =
 
 
+```
