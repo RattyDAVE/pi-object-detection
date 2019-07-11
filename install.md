@@ -26,6 +26,7 @@ wget http://download.tensorflow.org/models/object_detection/ssdlite_mobilenet_v2
 tar -xzvf ssdlite_mobilenet_v2_coco_2018_05_09.tar.gz
 
 wget https://raw.githubusercontent.com/RattyDAVE/pi4b-object-detection/master/Object_detection_picamera.py
+wget https://raw.githubusercontent.com/RattyDAVE/pi4b-object-detection/master/config.py
 
 #---------------------- To Run ----------------------
 
