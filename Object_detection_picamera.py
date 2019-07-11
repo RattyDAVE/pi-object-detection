@@ -18,9 +18,10 @@ IM_HEIGHT= int(config['DEFAULT']['IM_HEIGHT'])
 
 MODEL_NAME = config['DEFAULT']['MODEL_NAME']
 CWD_PATH = os.getcwd()
-PATH_TO_CKPT = os.path.join(CWD_PATH,MODEL_NAME,'frozen_inference_graph.pb')
-PATH_TO_LABELS = os.path.join(CWD_PATH,'data','mscoco_label_map.pbtxt')
+PATH_TO_LABELS = os.path.join(CWD_PATH,'data',config['DEFAULT']['PATH_TO_LABELS'])
 NUM_CLASSES = int(config['DEFAULT']['NUM_CLASSES'])
+
+PATH_TO_CKPT = os.path.join(CWD_PATH,MODEL_NAME,'frozen_inference_graph.pb')
 
 camera_type = 'picamera'
 parser = argparse.ArgumentParser()
