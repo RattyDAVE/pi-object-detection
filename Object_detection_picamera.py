@@ -120,7 +120,7 @@ elif camera_type == 'usb':
             category_index,
             use_normalized_coordinates=True,
             line_thickness=8,
-            min_score_thresh=0.85)
+            min_score_thresh=0.40)
 
         cv2.putText(frame,"FPS: {0:.2f}".format(frame_rate_calc),(30,50),font,1,(255,255,0),2,cv2.LINE_AA)
         cv2.imshow('Object detector', frame)
