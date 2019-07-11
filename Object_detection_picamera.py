@@ -16,11 +16,11 @@ IM_WIDTH = int(config['DEFAULT']['IM_WIDTH'])
 IM_HEIGHT= int(config['DEFAULT']['IM_HEIGHT'])
 
 
-MODEL_NAME = 'ssdlite_mobilenet_v2_coco_2018_05_09'
+MODEL_NAME = config['DEFAULT']['MODEL_NAME']
 CWD_PATH = os.getcwd()
 PATH_TO_CKPT = os.path.join(CWD_PATH,MODEL_NAME,'frozen_inference_graph.pb')
 PATH_TO_LABELS = os.path.join(CWD_PATH,'data','mscoco_label_map.pbtxt')
-NUM_CLASSES = 90
+NUM_CLASSES = int(config['DEFAULT']['NUM_CLASSES'])
 
 camera_type = 'picamera'
 parser = argparse.ArgumentParser()
