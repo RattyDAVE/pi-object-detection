@@ -7,7 +7,13 @@ import tensorflow as tf
 import argparse
 import sys
 
-import config.py
+import configparser
+
+config = configparser.ConfigParser()
+config.read('obj-config.ini')
+
+
+
 
 MODEL_NAME = 'ssdlite_mobilenet_v2_coco_2018_05_09'
 CWD_PATH = os.getcwd()
