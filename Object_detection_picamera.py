@@ -68,8 +68,8 @@ while(True):
         frame_rate_calc = 1/time1
 
         # Press 'q' to quit
-        #if cv2.waitKey(1) == ord('q'):
-        #    break
+        if cv2.waitKey(1) == ord('q'):
+            break
 
 camera.release()
 cv2.destroyAllWindows()
