@@ -12,12 +12,8 @@ import configparser
 config = configparser.ConfigParser()
 config.read('obj-config.ini')
 
-;IM_WIDTH = 1280
-;IM_HEIGHT = 720
-
 IM_WIDTH = config['DEFAULT']['IM_WIDTH']
 IM_HEIGHT= config['DEFAULT']['IM_HEIGHT']
-
 
 
 MODEL_NAME = 'ssdlite_mobilenet_v2_coco_2018_05_09'
