@@ -28,7 +28,6 @@ protoc object_detection/protos/*.proto --python_out=.
 cd ~/tensorflow1/models/research/object_detection
 
 ## COCO-trained models
-
 #wget http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_2018_01_28.tar.gz && tar -xzvf ssd_mobilenet_v1_coco_2018_01_28.tar.gz
 #wget http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_0.75_depth_300x300_coco14_sync_2018_07_03.tar.gz && tar -xzvf ssd_mobilenet_v1_0.75_depth_300x300_coco14_sync_2018_07_03.tar.gz
 #wget http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_quantized_300x300_coco14_sync_2018_07_18.tar.gz && tar -xzvf ssd_mobilenet_v1_quantized_300x300_coco14_sync_2018_07_18.tar.gz
