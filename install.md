@@ -6,17 +6,17 @@ sudo apt upgrade -y
 #On a new RPI4 this is a must as fixes firmware
 sudo rpi-update 
 
-sudo apt install libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libxvidcore-dev libx264-dev qt4-dev-tools python3-opencv python3-tk libatlas-base-dev python3-protobuf protobuf-compiler
+sudo apt install -y libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libxvidcore-dev libx264-dev qt4-dev-tools python3-opencv python3-tk libatlas-base-dev python3-protobuf protobuf-compiler
 
-### Keep and eye on the below for a verion for the RPI 4. Currently there is no performace increase.
+### Keep and eye on the below for a verion for the RPI 4. Currently there is no performace increase. So stick with using the pip3 install 
 #git clone https://github.com/PINTO0309/Tensorflow-bin.git
 #cd Tensorflow-bin
 #mv tensorflow-1.14.0-cp35-cp35m-linux_armv7l.whl tensorflow-1.14.0-cp37-cp37m-linux_armv7l.whl
 #pip3 install --upgrade setuptools
 #pip3 install tensorflow-1.14.0-cp37-cp37m-linux_armv7l.whl
 
+sudo apt-get install -y python3-matplotlib python3-pil python3-lxml
 sudo pip3 install tensorflow
-sudo apt-get install python3-matplotlib python3-pil python3-lxml
 
 mkdir ~/tensorflow1
 cd ~/tensorflow1
@@ -77,7 +77,7 @@ wget http://download.tensorflow.org/models/object_detection/ssdlite_mobilenet_v2
 echo "export PYTHONPATH=$PYTHONPATH:~/tensorflow1/models/research:~/tensorflow1/models/research/slim" >> ~/.bashrc
 export PYTHONPATH=$PYTHONPATH:~/tensorflow1/models/research:~/tensorflow1/models/research/slim
 
-rm Object_detection_picamera.py
+rm camera_on.py
 rm obj-config.ini
 wget https://raw.githubusercontent.com/RattyDAVE/pi4b-object-detection/master/camera_on.py
 wget https://raw.githubusercontent.com/RattyDAVE/pi4b-object-detection/master/obj-config.ini
@@ -90,8 +90,8 @@ python3 camera_on
 
 # --- Clean up --------------------------------------
 sudo pip3 uninstall $(pip3 show tensorflow | grep Requires | sed 's/Requires: //g; s/,//g')
-
-sudo apt purge libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libxvidcore-dev libx264-dev qt4-dev-tools python3-opencv python3-tk libatlas-base-dev python3-protobuf protobuf-compiler python3-matplotlib python3-pil python3-lxml
+sudo apt purge -y libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libxvidcore-dev libx264-dev qt4-dev-tools python3-opencv python3-tk libatlas-base-dev python3-protobuf protobuf-compiler python3-matplotlib python3-pil python3-lxml
 rm -rf ~/tensorflow1
 rm -rf ~/Tensorflow-bin
+sed -i '/tensorflow1/d' ~/.bashrc
 #----------------------------------------------------
