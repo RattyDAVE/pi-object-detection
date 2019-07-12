@@ -8,6 +8,7 @@ sudo rpi-update
 
 sudo apt install -y libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libxvidcore-dev libx264-dev qt4-dev-tools python3-opencv python3-tk libatlas-base-dev python3-protobuf protobuf-compiler
 
+
 ### Keep and eye on the below for a verion for the RPI 4. Currently there is no performace increase. So stick with using the pip3 install 
 #git clone https://github.com/PINTO0309/Tensorflow-bin.git
 #cd Tensorflow-bin
@@ -15,7 +16,8 @@ sudo apt install -y libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev libavcod
 #pip3 install --upgrade setuptools
 #pip3 install tensorflow-1.14.0-cp37-cp37m-linux_armv7l.whl
 
-sudo apt-get install -y python3-matplotlib python3-pil python3-lxml
+sudo apt-get install -y python3-matplotlib python3-pil python3-lxml python3-grpcio python3-keras-preprocessing python3-protobuf python3-keras-applications python3-wrapt python3-termcolor python3-astor python3-h5py python3-markdown
+
 sudo pip3 install tensorflow
 
 mkdir ~/tensorflow1
