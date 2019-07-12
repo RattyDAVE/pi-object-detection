@@ -1,4 +1,4 @@
-# Object Detection on Raspberry Pi 1/2/3/4
+# Object Detection on Raspberry Pi 4
 This has been tested on a Raspberry Pi 4 with a USB camera and the Raspberry Pi Camera Module.
 
 #### Defaults
