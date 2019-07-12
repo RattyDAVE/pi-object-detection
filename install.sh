@@ -6,7 +6,7 @@ sudo apt update -y
 #On a new RPI4 this is a must as fixes firmware
 #sudo rpi-update 
 
-sudo apt install -y libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libxvidcore-dev libx264-dev qt4-dev-tools python3-opencv python3-tk libatlas-base-dev python3-protobuf protobuf-compiler
+sudo apt install -y libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libxvidcore-dev libx264-dev qt4-dev-tools python3-opencv python-opencv python3-tk libatlas-base-dev python3-protobuf protobuf-compiler 
 
 
 ### Keep and eye on the below for a verion for the RPI 4. Currently there is no performace increase. So stick with using the pip3 install 
