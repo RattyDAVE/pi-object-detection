@@ -72,13 +72,13 @@ export PYTHONPATH=$PYTHONPATH:~/tensorflow1/models/research:~/tensorflow1/models
 
 rm Object_detection_picamera.py
 rm obj-config.ini
-wget https://raw.githubusercontent.com/RattyDAVE/pi4b-object-detection/master/Object_detection_picamera.py
+wget https://raw.githubusercontent.com/RattyDAVE/pi4b-object-detection/master/camera_on.py
 wget https://raw.githubusercontent.com/RattyDAVE/pi4b-object-detection/master/obj-config.ini
 
 #---------------------- To Run ----------------------
 
 
 cd ~/tensorflow1/models/research/object_detection
-#python3 Object_detection_picamera.py 
-#python3 Object_detection_picamera.py --usbcam
+python3 camera_on
+
 
