@@ -15,7 +15,7 @@ curl https://raw.githubusercontent.com/RattyDAVE/pi4b-object-detection/master/ru
 curl https://raw.githubusercontent.com/RattyDAVE/pi4b-object-detection/master/uninstall.sh|/bin/sh
 ```
 
-This uses pretrained models and can has the ability to change the model easy using the configuration file. 
+This uses pretrained models and can has the ability to change the model easy using the configuration file. The default is ssdlite_mobilenet_v2_coco_2018_05_09.
 
 #### COCO-trained models
 - ssd_mobilenet_v1_coco_2018_01_28
@@ -27,7 +27,7 @@ This uses pretrained models and can has the ability to change the model easy usi
 - ssd_resnet50_v1_fpn_shared_box_predictor_640x640_coco14_sync_2018_07_03
 - ssd_mobilenet_v2_coco_2018_03_29
 - ssd_mobilenet_v2_quantized_300x300_coco_2019_01_03
-- *4ssdlite_mobilenet_v2_coco_2018_05_09*
+- *ssdlite_mobilenet_v2_coco_2018_05_09*
 - ssd_inception_v2_coco_2018_01_28
 - faster_rcnn_inception_v2_coco_2018_01_28
 - faster_rcnn_resnet50_coco_2018_01_28
