@@ -5,8 +5,11 @@ This has been tested on a Raspberry Pi 4 with a USB camera and the Raspberry Pi 
 - Image size of 640x480
 - ssdlite_mobilenet_v2_coco_2018_05_09
 
-You can expect 2.3 FP/S using the defaults. 
+You can expect 2.3 FP/S using the defaults.
 
+This uses pretrained models and can has the ability to change the model easy using the configuration file.
+
+## Scripts
 ### To install run the following.
 ```
 curl https://raw.githubusercontent.com/RattyDAVE/pi4b-object-detection/master/install.sh|/bin/sh
@@ -22,7 +25,10 @@ curl https://raw.githubusercontent.com/RattyDAVE/pi4b-object-detection/master/ru
 curl https://raw.githubusercontent.com/RattyDAVE/pi4b-object-detection/master/uninstall.sh|/bin/sh
 ```
 
-This uses pretrained models and can has the ability to change the model easy using the configuration file. The default is ssdlite_mobilenet_v2_coco_2018_05_09.
+
+
+## Models 
+The default is ssdlite_mobilenet_v2_coco_2018_05_09.
 
 #### COCO-trained models
 - ssd_mobilenet_v1_coco_2018_01_28
