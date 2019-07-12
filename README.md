@@ -1,4 +1,11 @@
 # Object Detection on Raspberry Pi 1/2/3/4
+This has been tested on a Raspberry Pi 4 with a USB camera and the Raspberry Pi Camera Module.
+
+#### Defaults
+- Image size of 640x480
+- ssdlite_mobilenet_v2_coco_2018_05_09
+
+You can expect 2.3 FP/S using the defaults. 
 
 ### To install run the following.
 ```
