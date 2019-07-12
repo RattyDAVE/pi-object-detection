@@ -1,4 +1,3 @@
 #!/bin/sh
 
-cd ~/tensorflow1/models/research/object_detection
-python3 camera_on
+python3 ~/tensorflow1/models/research/object_detection/camera_on.py
