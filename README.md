@@ -1,7 +1,7 @@
 # Object Detection on Raspberry Pi 4
 This has been tested on a Raspberry Pi 4 with a USB camera and the Raspberry Pi Camera Module.
 
-The perpose is to get the object detection and proof of concept working in the minimum time.
+The purpose is to get the object detection and proof of concept working in the minimum time.
 
 Ethos:
 - We use pre-compiled binaries where possible from the Raspberry Pi repository.
