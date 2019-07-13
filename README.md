@@ -27,8 +27,11 @@ curl https://raw.githubusercontent.com/RattyDAVE/pi4b-object-detection/master/un
 
 
 
-## Models 
-The default is ssdlite_mobilenet_v2_coco_2018_05_09.
+## Models
+
+All models are taken from [Tensorflow detection model zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md)
+
+The default is ssdlite_mobilenet_v2_coco_2018_05_09. You can change the models but uncommenting the line in the [install.sh](https://github.com/RattyDAVE/pi4b-object-detection/blob/master/install.sh) and the [obj-config.ini](https://github.com/RattyDAVE/pi4b-object-detection/blob/master/obj-config.ini)
 
 #### COCO-trained models
 - ssd_mobilenet_v1_coco_2018_01_28
