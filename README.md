@@ -1,5 +1,11 @@
-# Object Detection on Raspberry Pi 4
-This has been tested on a Raspberry Pi 4 with a USB camera and the Raspberry Pi Camera Module.
+# Object Detection on Raspberry Pi 4/3
+
+### Tested On
+
+- RPi4 with USB camera
+- RPi4 with Raspberry Pi Camera Module.
+- RPi3 with USB camera
+- RPi3 with Raspberry Pi Camera Module.
 
 The purpose is to get the object detection and proof of concept working in the minimum time.
 
@@ -11,7 +17,9 @@ Ethos:
 - Image size of 640x480
 - ssdlite_mobilenet_v2_coco_2018_05_09
 
-You can expect 2.3 FP/S using the defaults.
+### Rate
+- RPi4 You can expect 2.3 FP/S using the defaults.
+- RPi3 You can expect 1.2 FP/S using the defaults.
 
 This uses pretrained models and can has the ability to change the model easy using the configuration file.
 
