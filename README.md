@@ -17,7 +17,7 @@ Ethos:
 - Image size of 640x480
 - ssdlite_mobilenet_v2_coco_2018_05_09
 
-### Rate
+#### Rate
 - RPi4 You can expect 2.3 FP/S using the defaults.
 - RPi3 You can expect 1.2 FP/S using the defaults.
 
