@@ -7,7 +7,7 @@ sudo apt update -y
 #sudo rpi-update 
 
 sudo apt install -y libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libxvidcore-dev libx264-dev qt4-dev-tools python3-opencv python-opencv python3-tk libatlas-base-dev python3-protobuf protobuf-compiler 
-sudo apt-get install -y python3-matplotlib python3-pil python3-lxml python3-grpcio python3-keras-preprocessing python3-protobuf python3-keras-applications python3-wrapt python3-termcolor python3-astor python3-h5py python3-markdown
+sudo apt install -y python3-matplotlib python3-pil python3-lxml python3-grpcio python3-keras-preprocessing python3-protobuf python3-keras-applications python3-wrapt python3-termcolor python3-astor python3-h5py python3-markdown
 
 
 ### Keep and eye on the below for a verion for the RPI 4. 
