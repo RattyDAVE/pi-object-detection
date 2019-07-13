@@ -39,7 +39,7 @@ All models are taken from [Tensorflow detection model zoo](https://github.com/te
 
 The default is ssdlite_mobilenet_v2_coco_2018_05_09. You can change the models but uncommenting the line in the [install.sh](https://github.com/RattyDAVE/pi4b-object-detection/blob/master/install.sh) and the [obj-config.ini](https://github.com/RattyDAVE/pi4b-object-detection/blob/master/obj-config.ini)
 
-#### COCO-trained models
+#### COCO-trained models from [COCO dataset](http://mscoco.org)
 - ssd_mobilenet_v1_coco_2018_01_28
 - ssd_mobilenet_v1_0.75_depth_300x300_coco14_sync_2018_07_03
 - ssd_mobilenet_v1_quantized_300x300_coco14_sync_2018_07_18
@@ -66,10 +66,10 @@ The default is ssdlite_mobilenet_v2_coco_2018_05_09. You can change the models b
 - mask_rcnn_resnet101_atrous_coco_2018_01_28
 - mask_rcnn_resnet50_atrous_coco_2018_01_28
 
-#### Kitti-trained models - NOT TESTED
+#### Kitti-trained models from [Kitti dataset](http://www.cvlibs.net/datasets/kitti/)- NOT TESTED
 - faster_rcnn_resnet101_kitti_2018_01_28
 
-#### Open Images-trained models - NOT TESTED
+#### Open Images-trained models from [Open Images dataset](https://github.com/openimages/dataset)- NOT TESTED
 - faster_rcnn_inception_resnet_v2_atrous_oid_2018_01_28
 - faster_rcnn_inception_resnet_v2_atrous_lowproposals_oid_2018_01_28
 - facessd_mobilenet_v2_quantized_320x320_open_image_v4
@@ -77,9 +77,9 @@ The default is ssdlite_mobilenet_v2_coco_2018_05_09. You can change the models b
 - ssd_mobilenet_v2_oid_v4_2018_12_12
 - ssd_resnet101_v1_fpn_shared_box_predictor_oid_512x512_sync_2019_01_20
 
-#### iNaturalist Species-trained models - NOT TESTED
+#### iNaturalist Species-trained models from [iNaturalist Species Detection Dataset](https://github.com/visipedia/inat_comp/blob/master/2017/README.md#bounding-boxes)- NOT TESTED
 - faster_rcnn_resnet101_fgvc_2018_07_19
 - faster_rcnn_resnet50_fgvc_2018_07_19
 
-#### AVA v2.1 trained models - NOT TESTED
+#### AVA v2.1 trained models from [AVA v2.1 dataset](https://research.google.com/ava/) - NOT TESTED
 - faster_rcnn_resnet101_ava_v2.1_2018_04_30
