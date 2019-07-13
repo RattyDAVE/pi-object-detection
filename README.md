@@ -85,10 +85,10 @@ The default is ssdlite_mobilenet_v2_coco_2018_05_09. You can change the models b
 - ssd_mobilenet_v2_oid_v4_2018_12_12
 - ssd_resnet101_v1_fpn_shared_box_predictor_oid_512x512_sync_2019_01_20
 
-#### iNaturalist Species-trained models from [iNaturalist Species Detection Dataset](https://github.com/visipedia/inat_comp/blob/master/2017/README.md#bounding-boxes)- FAILED (bad alloc)
+#### iNaturalist Species-trained models from [iNaturalist Species Detection Dataset](https://github.com/visipedia/inat_comp/blob/master/2017/README.md#bounding-boxes)
 - faster_rcnn_resnet101_fgvc_2018_07_19
-- faster_rcnn_resnet50_fgvc_2018_07_19
+- faster_rcnn_resnet50_fgvc_2018_07_19 - **FAILED (bad alloc)**
 
-#### AVA v2.1 trained models from [AVA v2.1 dataset](https://research.google.com/ava/) - FAILED (bad alloc)
+#### AVA v2.1 trained models from [AVA v2.1 dataset](https://research.google.com/ava/)
 AVA is a project that provides audiovisual annotations of video for improving our understanding of human activity.
-- faster_rcnn_resnet101_ava_v2.1_2018_04_30
+- faster_rcnn_resnet101_ava_v2.1_2018_04_30 - **FAILED (bad alloc)**
