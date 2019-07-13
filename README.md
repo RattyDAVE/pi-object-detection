@@ -89,6 +89,6 @@ The default is ssdlite_mobilenet_v2_coco_2018_05_09. You can change the models b
 - faster_rcnn_resnet101_fgvc_2018_07_19
 - faster_rcnn_resnet50_fgvc_2018_07_19
 
-#### AVA v2.1 trained models from [AVA v2.1 dataset](https://research.google.com/ava/) - NOT TESTED
+#### AVA v2.1 trained models from [AVA v2.1 dataset](https://research.google.com/ava/) - FAILED (bad alloc)
 AVA is a project that provides audiovisual annotations of video for improving our understanding of human activity.
 - faster_rcnn_resnet101_ava_v2.1_2018_04_30
