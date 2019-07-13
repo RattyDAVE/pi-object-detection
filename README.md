@@ -26,17 +26,17 @@ This uses pretrained models and can has the ability to change the model easy usi
 ## Scripts
 ### To install run the following.
 ```
-curl https://raw.githubusercontent.com/RattyDAVE/pi4b-object-detection/master/install.sh|/bin/sh
+curl https://raw.githubusercontent.com/RattyDAVE/pi-object-detection/master/install.sh|/bin/sh
 ```
 
 ### To start the object detetection run the following
 ```
-curl https://raw.githubusercontent.com/RattyDAVE/pi4b-object-detection/master/run.sh|/bin/sh
+curl https://raw.githubusercontent.com/RattyDAVE/pi-object-detection/master/run.sh|/bin/sh
 ```
 
 ### To uninstall and wipe all traces run the following.
 ```
-curl https://raw.githubusercontent.com/RattyDAVE/pi4b-object-detection/master/uninstall.sh|/bin/sh
+curl https://raw.githubusercontent.com/RattyDAVE/pi-object-detection/master/uninstall.sh|/bin/sh
 ```
 
 
