@@ -81,5 +81,5 @@ export PYTHONPATH=$PYTHONPATH:~/tensorflow1/models/research:~/tensorflow1/models
 
 rm camera_on.py
 rm obj-config.ini
-wget https://raw.githubusercontent.com/RattyDAVE/pi4b-object-detection/master/camera_on.py
-wget https://raw.githubusercontent.com/RattyDAVE/pi4b-object-detection/master/obj-config.ini
+wget https://raw.githubusercontent.com/RattyDAVE/pi-object-detection/master/camera_on.py
+wget https://raw.githubusercontent.com/RattyDAVE/pi-object-detection/master/obj-config.ini
