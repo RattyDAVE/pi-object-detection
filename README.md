@@ -74,8 +74,8 @@ The default is ssdlite_mobilenet_v2_coco_2018_05_09. You can change the models b
 - mask_rcnn_resnet101_atrous_coco_2018_01_28
 - mask_rcnn_resnet50_atrous_coco_2018_01_28
 
-#### Kitti-trained models from [Kitti dataset](http://www.cvlibs.net/datasets/kitti/)- NOT TESTED
-- faster_rcnn_resnet101_kitti_2018_01_28
+#### Kitti-trained models from [Kitti dataset](http://www.cvlibs.net/datasets/kitti/)
+- faster_rcnn_resnet101_kitti_2018_01_28 - **FAILED (bad alloc)**
 
 #### Open Images-trained models from [Open Images dataset](https://github.com/openimages/dataset)- NOT TESTED
 - faster_rcnn_inception_resnet_v2_atrous_oid_2018_01_28
