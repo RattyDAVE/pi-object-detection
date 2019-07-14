@@ -12,8 +12,8 @@ config.read('obj-config.ini')
 IM_WIDTH = int(config['DEFAULT']['IM_WIDTH'])
 IM_HEIGHT= int(config['DEFAULT']['IM_HEIGHT'])
 
-
 MODEL_NAME = config['DEFAULT']['MODEL_NAME']
+
 CWD_PATH = os.getcwd()
 PATH_TO_LABELS = os.path.join(CWD_PATH,'data',config['DEFAULT']['PATH_TO_LABELS'])
 NUM_CLASSES = int(config['DEFAULT']['NUM_CLASSES'])
@@ -21,6 +21,17 @@ NUM_CLASSES = int(config['DEFAULT']['NUM_CLASSES'])
 PATH_TO_CKPT = os.path.join(CWD_PATH,MODEL_NAME,'frozen_inference_graph.pb')
 
 sys.path.append('..')
+
+frame_rate_calc = 1
+freq = cv2.getTickFrequency()
+print "Freq"
+print freq
+
+font = cv2.FONT_HERSHEY_SIMPLEX
+
+camera = cv2.VideoCapture(0)
+ret = camera.set(3,IM_WIDTH)
+ret = camera.set(4,IM_HEIGHT)
 
 from utils import label_map_util
 from utils import visualization_utils as vis_util
@@ -30,6 +41,7 @@ categories = label_map_util.convert_label_map_to_categories(label_map, max_num_c
 category_index = label_map_util.create_category_index(categories)
 
 detection_graph = tf.Graph()
+
 with detection_graph.as_default():
     od_graph_def = tf.compat.v1.GraphDef()
     with tf.gfile.GFile(PATH_TO_CKPT, 'rb') as fid:
@@ -44,18 +56,6 @@ detection_boxes = detection_graph.get_tensor_by_name('detection_boxes:0')
 detection_scores = detection_graph.get_tensor_by_name('detection_scores:0')
 detection_classes = detection_graph.get_tensor_by_name('detection_classes:0')
 num_detections = detection_graph.get_tensor_by_name('num_detections:0')
-
-frame_rate_calc = 1
-
-freq = cv2.getTickFrequency()
-print "Freq"
-print freq
-
-font = cv2.FONT_HERSHEY_SIMPLEX
-
-camera = cv2.VideoCapture(0)
-ret = camera.set(3,IM_WIDTH)
-ret = camera.set(4,IM_HEIGHT)
 
 #Loop it!
 while(True):
