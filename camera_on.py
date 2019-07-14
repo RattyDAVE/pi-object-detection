@@ -24,8 +24,6 @@ sys.path.append('..')
 
 frame_rate_calc = 1
 freq = cv2.getTickFrequency()
-print ("Freq")
-print (freq)
 
 font = cv2.FONT_HERSHEY_SIMPLEX
 
