@@ -48,6 +48,7 @@ num_detections = detection_graph.get_tensor_by_name('num_detections:0')
 frame_rate_calc = 1
 
 freq = cv2.getTickFrequency()
+print "Freq"
 print freq
 
 font = cv2.FONT_HERSHEY_SIMPLEX
