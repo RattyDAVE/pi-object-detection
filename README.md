@@ -54,6 +54,7 @@ All models are taken from [Tensorflow detection model zoo](https://github.com/te
 The default is ssdlite_mobilenet_v2_coco_2018_05_09. You can change the models but uncommenting the line in the [install.sh](https://github.com/RattyDAVE/pi4b-object-detection/blob/master/install.sh) and the [obj-config.ini](https://github.com/RattyDAVE/pi4b-object-detection/blob/master/obj-config.ini)
 
 #### COCO-trained models from [COCO dataset](http://mscoco.org)
+90 Classes
 
 Size   |Model 
   --- | ---
@@ -84,12 +85,14 @@ Size   |Model
 428MB|mask_rcnn_resnet50_atrous_coco_2018_01_28
 
 #### Kitti-trained models from [Kitti dataset](http://www.cvlibs.net/datasets/kitti/)
+2 Classes
 
 Size   |Model 
   --- | ---
 555MB|faster_rcnn_resnet101_kitti_2018_01_28 - **FAILED (bad alloc)**
 
 #### Open Images-trained models from [Open Images dataset](https://github.com/openimages/dataset)
+601 Classes
 
 Size   |Model | Status
   --- | --- | ---
@@ -101,6 +104,7 @@ Size   |Model | Status
 608MB|ssd_resnet101_v1_fpn_shared_box_predictor_oid_512x512_sync_2019_01_20
 
 #### iNaturalist Species-trained models from [iNaturalist Species Detection Dataset](https://github.com/visipedia/inat_comp/blob/master/2017/README.md#bounding-boxes)
+90 Classes
 
 Size   |Model 
   --- | ---
@@ -109,6 +113,8 @@ Size   |Model
 
 #### AVA v2.1 trained models from [AVA v2.1 dataset](https://research.google.com/ava/)
 AVA is a project that provides audiovisual annotations of video for improving our understanding of human activity.
+
+90 Classes
 
 Size   |Model 
   --- | ---
