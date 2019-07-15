@@ -56,8 +56,8 @@ The default is ssdlite_mobilenet_v2_coco_2018_05_09. You can change the models b
 #### COCO-trained models from [COCO dataset](http://mscoco.org)
 90 Classes
 
-Size   |Model 
-  --- | ---
+Size   |Model | Status | FPS 4
+  --- | --- | --- | ---
 73MB|ssd_mobilenet_v1_coco_2018_01_28
 44MB|ssd_mobilenet_v1_0.75_depth_300x300_coco14_sync_2018_07_03
 81MB|ssd_mobilenet_v1_quantized_300x300_coco14_sync_2018_07_18
@@ -67,7 +67,7 @@ Size   |Model
 349MB|ssd_resnet50_v1_fpn_shared_box_predictor_640x640_coco14_sync_2018_07_03
 179MB|ssd_mobilenet_v2_coco_2018_03_29
 138MB|ssd_mobilenet_v2_quantized_300x300_coco_2019_01_03
-48MB|*ssdlite_mobilenet_v2_coco_2018_05_09*
+48MB|*ssdlite_mobilenet_v2_coco_2018_05_09*|**WORKS**|2.8
 265MB|ssd_inception_v2_coco_2018_01_28
 142MB|faster_rcnn_inception_v2_coco_2018_01_28
 363MB|faster_rcnn_resnet50_coco_2018_01_28
@@ -87,34 +87,34 @@ Size   |Model
 #### Kitti-trained models from [Kitti dataset](http://www.cvlibs.net/datasets/kitti/)
 2 Classes
 
-Size   |Model 
-  --- | ---
-555MB|faster_rcnn_resnet101_kitti_2018_01_28 - **FAILED (bad alloc)**
+Size   |Model | Status | FPS 4
+  --- | --- | --- | ---
+555MB|faster_rcnn_resnet101_kitti_2018_01_28|**FAILED (bad alloc)**
 
 #### Open Images-trained models from [Open Images dataset](https://github.com/openimages/dataset)
 601 Classes
 
-Size   |Model | Status
-  --- | --- | ---
+Size   |Model | Status | FPS 4
+  --- | --- | --- | ---
 680MB|faster_rcnn_inception_resnet_v2_atrous_oid_2018_01_28
 680MB|faster_rcnn_inception_resnet_v2_atrous_lowproposals_oid_2018_01_28
 124MB|facessd_mobilenet_v2_quantized_320x320_open_image_v4
 682MB|faster_rcnn_inception_resnet_v2_atrous_oid_v4_2018_12_12
-151MB|ssd_mobilenet_v2_oid_v4_2018_12_12 | **Works**
+151MB|ssd_mobilenet_v2_oid_v4_2018_12_12 | **Works** | 1.5
 608MB|ssd_resnet101_v1_fpn_shared_box_predictor_oid_512x512_sync_2019_01_20
 
 #### iNaturalist Species-trained models from [iNaturalist Species Detection Dataset](https://github.com/visipedia/inat_comp/blob/master/2017/README.md#bounding-boxes)
 
-Size   |Model 
-  --- | ---
+Size   |Model | Status | FPS 4
+  --- | --- | --- | ---
 868MB|faster_rcnn_resnet101_fgvc_2018_07_19
-666MB|faster_rcnn_resnet50_fgvc_2018_07_19 - **FAILED (bad alloc)**
+666MB|faster_rcnn_resnet50_fgvc_2018_07_19|**FAILED (bad alloc)**
 
 #### AVA v2.1 trained models from [AVA v2.1 dataset](https://research.google.com/ava/)
 AVA is a project that provides audiovisual annotations of video for improving our understanding of human activity.
 
 90 Classes
 
-Size   |Model 
-  --- | ---
-565MB|faster_rcnn_resnet101_ava_v2.1_2018_04_30 - **FAILED (bad alloc)**
+Size   |Model | Status | FPS 4
+  --- | --- | --- | ---
+565MB|faster_rcnn_resnet101_ava_v2.1_2018_04_30|**FAILED (bad alloc)**
