@@ -89,15 +89,15 @@ Size   |Model
   --- | ---
 555MB|faster_rcnn_resnet101_kitti_2018_01_28 - **FAILED (bad alloc)**
 
-#### Open Images-trained models from [Open Images dataset](https://github.com/openimages/dataset)- NOT TESTED
+#### Open Images-trained models from [Open Images dataset](https://github.com/openimages/dataset)
 
-Size   |Model 
-  --- | ---
+Size   |Model | Status
+  --- | --- | ---
 680MB|faster_rcnn_inception_resnet_v2_atrous_oid_2018_01_28
 680MB|faster_rcnn_inception_resnet_v2_atrous_lowproposals_oid_2018_01_28
 124MB|facessd_mobilenet_v2_quantized_320x320_open_image_v4
 682MB|faster_rcnn_inception_resnet_v2_atrous_oid_v4_2018_12_12
-151MB|ssd_mobilenet_v2_oid_v4_2018_12_12
+151MB|ssd_mobilenet_v2_oid_v4_2018_12_12 | **Works**
 608MB|ssd_resnet101_v1_fpn_shared_box_predictor_oid_512x512_sync_2019_01_20
 
 #### iNaturalist Species-trained models from [iNaturalist Species Detection Dataset](https://github.com/visipedia/inat_comp/blob/master/2017/README.md#bounding-boxes)
