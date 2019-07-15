@@ -104,6 +104,7 @@ Size   |Model | Status | FPS 4
 608MB|ssd_resnet101_v1_fpn_shared_box_predictor_oid_512x512_sync_2019_01_20
 
 #### iNaturalist Species-trained models from [iNaturalist Species Detection Dataset](https://github.com/visipedia/inat_comp/blob/master/2017/README.md#bounding-boxes)
+2854 Classs
 
 Size   |Model | Status | FPS 4
   --- | --- | --- | ---
