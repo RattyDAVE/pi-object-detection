@@ -25,11 +25,11 @@ This uses pretrained models and can has the ability to change the model easy usi
 
 ## Scripts
 ### To install run the following.
-#### To install Tensorflow 1
+- To install Tensorflow 1
 ```
 curl https://raw.githubusercontent.com/RattyDAVE/pi-object-detection/master/install.sh|/bin/sh
 ```
-#### To install Tensorflow 2 beta
+- To install Tensorflow 2 beta
 ```
 curl https://raw.githubusercontent.com/RattyDAVE/pi-object-detection/master/install2.sh|/bin/sh
 ```
