@@ -10,7 +10,6 @@ TF_MODEL='detect.tflite'
 
 frame_rate_calc = 1
 freq = cv2.getTickFrequency()
-
 font = cv2.FONT_HERSHEY_SIMPLEX
 
 camera = cv2.VideoCapture(0)
@@ -46,15 +45,11 @@ while(True):
         #Resize frame
         frame_expanded = np.expand_dims(frame, axis=0)
         
-        # Actual detection.
-        #(boxes, scores, classes, num) = sess.run(
-        #    [detection_boxes, detection_scores, detection_classes, num_detections],
-        #    feed_dict={image_tensor: frame_expanded})
-        
+        #Actual detection.     
         interpreter.set_tensor(input_details[0]['index'], frame_expanded)
         interpreter.invoke()
 
-        # Visualization of the results of a detection.
+        #Visualization of the results of a detection.
         vis_util.visualize_boxes_and_labels_on_image_array(
             frame,
             np.squeeze(boxes),
