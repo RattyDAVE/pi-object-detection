@@ -8,6 +8,8 @@ import sys
 #wget http://download.tensorflow.org/models/mobilenet_v1_2018_08_02/mobilenet_v1_0.25_128_quant.tgz
 PATH_TO_LABELS = 'data/mscoco_label_map.pbtxt'
 TF_MODEL='mobilenet_v1_0.25_128_quant.tflite'
+#TF_MODEL='mobilenet_v2_1.0_224.tflite'
+
 NUM_CLASSES = 90
 
 frame_rate_calc = 1
@@ -21,19 +23,28 @@ ret = camera.set(4,480)
 from utils import label_map_util
 from utils import visualization_utils as vis_util
 
+#from object_detection.utils import label_map_util
+#from object_detection.utils import visualization_utils as vis_util
+
 label_map = label_map_util.load_labelmap(PATH_TO_LABELS)
 categories = label_map_util.convert_label_map_to_categories(label_map, max_num_classes=NUM_CLASSES, use_display_name=True)
 category_index = label_map_util.create_category_index(categories)
 
-interpreter = tf.contrib.lite.Interpreter(model_path=TF_MODEL)
+interpreter = tf.lite.Interpreter(model_path=TF_MODEL)
 
 input_details = interpreter.get_input_details()
 output_details = interpreter.get_output_details()
 
-boxes = interpreter.get_tensor(output_details[0]['index'])
-classes = interpreter.get_tensor(output_details[1]['index'])
-sores = interpreter.get_tensor(output_details[2]['index'])
-num = int(interpreter.get_tensor(output_details[3]['index'])[0])
+# check the type of the input tensor
+floating_model = False
+if input_details[0]['dtype'] == np.float32:
+  floating_model = True
+
+height = input_details[0]['shape'][1]
+width = input_details[0]['shape'][2] 
+
+print("height=",height)
+print("width=",width)
 
 #Loop it!
 while(True):
@@ -45,11 +56,21 @@ while(True):
         ret, frame = camera.read()
         
         #Resize frame
-        frame_expanded = np.expand_dims(frame, axis=0)
-        
+        frame2 = cv2.resize(frame, (height,width))
+        frame_expanded = np.expand_dims(frame2, axis=0)
+
+        if floating_model:        
+            frame_expanded = (np.float32(frame_expanded) - 127.5) / 127.5
+
         #Actual detection.     
         interpreter.set_tensor(input_details[0]['index'], frame_expanded)
         interpreter.invoke()
+
+        boxes = interpreter.get_tensor(output_details[0]['index'])
+        classes = interpreter.get_tensor(output_details[1]['index'])
+        scores = interpreter.get_tensor(output_details[2]['index'])
+        num = int(interpreter.get_tensor(output_details[3]['index'])[0])
+
 
         #Visualization of the results of a detection.
         vis_util.visualize_boxes_and_labels_on_image_array(
