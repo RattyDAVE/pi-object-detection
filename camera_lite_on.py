@@ -4,17 +4,19 @@ import numpy as np
 import tensorflow as tf
 import sys
 
-
-PATH_TO_LABELS = 'labels'
-TF_MODEL='detect.tflite'
+#from https://www.tensorflow.org/lite/guide/hosted_models
+#wget http://download.tensorflow.org/models/mobilenet_v1_2018_08_02/mobilenet_v1_0.25_128_quant.tgz
+PATH_TO_LABELS = 'data/mscoco_label_map.pbtxt'
+TF_MODEL='mobilenet_v1_0.25_128_quant.tflite'
+NUM_CLASSES = 90
 
 frame_rate_calc = 1
 freq = cv2.getTickFrequency()
 font = cv2.FONT_HERSHEY_SIMPLEX
 
 camera = cv2.VideoCapture(0)
-ret = camera.set(3,IM_WIDTH)
-ret = camera.set(4,IM_HEIGHT)
+ret = camera.set(3,640)
+ret = camera.set(4,480)
 
 from utils import label_map_util
 from utils import visualization_utils as vis_util
@@ -79,4 +81,3 @@ while(True):
 
 camera.release()
 cv2.destroyAllWindows()
-
