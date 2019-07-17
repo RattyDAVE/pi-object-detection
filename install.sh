@@ -76,6 +76,9 @@ wget http://download.tensorflow.org/models/object_detection/ssdlite_mobilenet_v2
 ## AVA v2.1 trained models
 #wget http://download.tensorflow.org/models/object_detection/faster_rcnn_resnet101_ava_v2.1_2018_04_30.tar.gz && tar -xzvf faster_rcnn_resnet101_ava_v2.1_2018_04_30.tar.gz
 
+#Tensorflow LITE models
+#wget http://download.tensorflow.org/models/mobilenet_v1_2018_08_02/mobilenet_v1_0.25_128_quant.tgz && tar -xzvf mobilenet_v1_0.25_128_quant.tgz
+
 echo "export PYTHONPATH=$PYTHONPATH:~/tensorflow1/models/research:~/tensorflow1/models/research/slim" >> ~/.bashrc
 export PYTHONPATH=$PYTHONPATH:~/tensorflow1/models/research:~/tensorflow1/models/research/slim
 
