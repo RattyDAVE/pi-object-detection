@@ -23,9 +23,10 @@ NUM_CLASSES = int(config['DEFAULT']['NUM_CLASSES'])
 #a = tf.lite.Interpreter('mobilenet_v2_1.0_224.tflite')
 a = tf.lite.Interpreter(MODEL_NAME)
 
-label_map = label_map_util.load_labelmap(PATH_TO_LABELS)
-categories = label_map_util.convert_label_map_to_categories(label_map, max_num_classes=NUM_CLASSES, use_display_name=True)
-category_index = label_map_util.create_category_index(categories)
+labels = load_labels(args.label_file)
+#label_map = label_map_util.load_labelmap(PATH_TO_LABELS)
+#categories = label_map_util.convert_label_map_to_categories(label_map, max_num_classes=NUM_CLASSES, use_display_name=True)
+#category_index = label_map_util.create_category_index(categories)
 
 a.allocate_tensors()
 input_details = a.get_input_details()
@@ -68,7 +69,7 @@ while(True):
             np.squeeze(boxes),
             np.squeeze(classes).astype(np.int32),
             np.squeeze(scores),
-            category_index,
+            labels,
             use_normalized_coordinates=True,
             line_thickness=2,
             min_score_thresh=0.20)
