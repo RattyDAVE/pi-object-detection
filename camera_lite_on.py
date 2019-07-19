@@ -1,6 +1,5 @@
 #from https://www.tensorflow.org/lite/guide/hosted_models
 #wget http://download.tensorflow.org/models/mobilenet_v1_2018_08_02/mobilenet_v1_0.25_128_quant.tgz
-#https://coral.withgoogle.com/models/
 
 import tensorflow as tf
 import cv2
@@ -35,7 +34,7 @@ for line in file:
     out = ''
     out += 'item' + s + '{' + end
     out += s*2 + 'name:' + ' ' + '\"' + line.strip('\n') + '\"' + end
-    out += s*2 + 'id:' + ' ' + (str(ID)) + end
+    out += s*2 + 'id:' + ' ' + (str(ID+1)) + end
     out += '}' + end
     
     with open(PATH_TO_LABELS+".conv", 'a') as f:
