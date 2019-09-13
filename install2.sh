@@ -15,9 +15,12 @@ sudo apt install -y python3-matplotlib python3-pil python3-lxml python3-grpcio p
 #cd Tensorflow-bin
 #mv tensorflow-1.14.0-cp35-cp35m-linux_armv7l.whl tensorflow-1.14.0-cp37-cp37m-linux_armv7l.whl
 
-wget https://github.com/PINTO0309/Tensorflow-bin/raw/master/tensorflow-2.0.0b1-cp37-cp37m-linux_armv7l.whl	
+#wget https://github.com/PINTO0309/Tensorflow-bin/raw/master/tensorflow-2.0.0b1-cp37-cp37m-linux_armv7l.whl
+wget https://github.com/PINTO0309/Tensorflow-bin/raw/master/tensorflow-2.0.0rc0-cp37-cp37m-linux_armv7l.whl	
+
 pip3 install --upgrade setuptools
-pip3 install tensorflow-2.0.0b1-cp37-cp37m-linux_armv7l.whl	
+#pip3 install tensorflow-2.0.0b1-cp37-cp37m-linux_armv7l.whl	
+pip3 install tensorflow-2.0.0rc0-cp37-cp37m-linux_armv7l.whl	
 
 #sudo pip3 install tensorflow
 
