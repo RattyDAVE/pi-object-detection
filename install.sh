@@ -12,8 +12,14 @@ sudo apt install -y python3-matplotlib python3-pil python3-lxml python3-grpcio p
 
 ### Keep and eye on the below for a verion for the RPI 4. 
 #git clone https://github.com/PINTO0309/Tensorflow-bin.git
-#cd Tensorflow-bin
-#mv tensorflow-1.14.0-cp35-cp35m-linux_armv7l.whl tensorflow-1.14.0-cp37-cp37m-linux_armv7l.whl
+#cd ~/Tensorflow-bin
+#pip3 install --upgrade setuptools
+#ls tensorflow-1*cp37*armv7l*
+#pip3 install tensorflow-1*cp37*armv7l*
+
+
+
+##mv tensorflow-1.14.0-cp35-cp35m-linux_armv7l.whl tensorflow-1.14.0-cp37-cp37m-linux_armv7l.whl
 
 wget https://github.com/PINTO0309/Tensorflow-bin/raw/master/tensorflow-1.14.0-cp37-cp37m-linux_armv7l.whl
 pip3 install --upgrade setuptools
@@ -61,7 +67,7 @@ wget http://download.tensorflow.org/models/object_detection/ssdlite_mobilenet_v2
 
 #Mobile models
 #wget http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v3_large_coco_2019_08_14.tar.gz && tar -xzvf ssd_mobilenet_v3_large_coco_2019_08_14.tar.gz
-#http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v3_small_coco_2019_08_14.tar.gz && tar -xzvf ssd_mobilenet_v3_small_coco_2019_08_14.tar.gz
+#wget http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v3_small_coco_2019_08_14.tar.gz && tar -xzvf ssd_mobilenet_v3_small_coco_2019_08_14.tar.gz
 
 #Pixel4 Edge TPU models
 #wget https://storage.cloud.google.com/mobilenet_edgetpu/checkpoints/ssdlite_mobilenet_edgetpu_coco_quant.tar.gz  && tar -xzvf ssdlite_mobilenet_edgetpu_coco_quant.tar.gz
