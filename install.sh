@@ -60,11 +60,11 @@ wget http://download.tensorflow.org/models/object_detection/ssdlite_mobilenet_v2
 
 
 #Mobile models
-wget http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v3_large_coco_2019_08_14.tar.gz && tar -xzvf ssd_mobilenet_v3_large_coco_2019_08_14.tar.gz
-http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v3_small_coco_2019_08_14.tar.gz && tar -xzvf ssd_mobilenet_v3_small_coco_2019_08_14.tar.gz
+#wget http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v3_large_coco_2019_08_14.tar.gz && tar -xzvf ssd_mobilenet_v3_large_coco_2019_08_14.tar.gz
+#http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v3_small_coco_2019_08_14.tar.gz && tar -xzvf ssd_mobilenet_v3_small_coco_2019_08_14.tar.gz
 
 #Pixel4 Edge TPU models
-wget https://storage.cloud.google.com/mobilenet_edgetpu/checkpoints/ssdlite_mobilenet_edgetpu_coco_quant.tar.gz  && tar -xzvf ssdlite_mobilenet_edgetpu_coco_quant.tar.gz
+#wget https://storage.cloud.google.com/mobilenet_edgetpu/checkpoints/ssdlite_mobilenet_edgetpu_coco_quant.tar.gz  && tar -xzvf ssdlite_mobilenet_edgetpu_coco_quant.tar.gz
 
 ## Kitti-trained models
 #wget http://download.tensorflow.org/models/object_detection/faster_rcnn_resnet101_kitti_2018_01_28.tar.gz && tar -xzvf faster_rcnn_resnet101_kitti_2018_01_28.tar.gz
