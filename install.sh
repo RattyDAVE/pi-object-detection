@@ -11,19 +11,19 @@ sudo apt install -y python3-matplotlib python3-pil python3-lxml python3-grpcio p
 
 
 ### Keep and eye on the below for a verion for the RPI 4. 
-#git clone https://github.com/PINTO0309/Tensorflow-bin.git
-#cd ~/Tensorflow-bin
-#pip3 install --upgrade setuptools
-#ls tensorflow-1*cp37*armv7l*
-#pip3 install tensorflow-1*cp37*armv7l*
+git clone https://github.com/PINTO0309/Tensorflow-bin.git
+cd ~/Tensorflow-bin
+pip3 install --upgrade setuptools
+ls tensorflow-1*cp37*armv7l*
+pip3 install tensorflow-1*cp37*armv7l*
 
 
 
 ##mv tensorflow-1.14.0-cp35-cp35m-linux_armv7l.whl tensorflow-1.14.0-cp37-cp37m-linux_armv7l.whl
 
-wget https://github.com/PINTO0309/Tensorflow-bin/raw/master/tensorflow-1.14.0-cp37-cp37m-linux_armv7l.whl
-pip3 install --upgrade setuptools
-pip3 install tensorflow-1.14.0-cp37-cp37m-linux_armv7l.whl
+#wget https://github.com/PINTO0309/Tensorflow-bin/raw/master/tensorflow-1.14.0-cp37-cp37m-linux_armv7l.whl
+#pip3 install --upgrade setuptools
+#pip3 install tensorflow-1.14.0-cp37-cp37m-linux_armv7l.whl
 
 #sudo pip3 install tensorflow
 
