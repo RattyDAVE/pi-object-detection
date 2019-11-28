@@ -84,6 +84,20 @@ Size   |Model | Status rpi4| FPS rpi4
 631MB|mask_rcnn_resnet101_atrous_coco_2018_01_28
 428MB|mask_rcnn_resnet50_atrous_coco_2018_01_28
 
+
+### Mobile models
+
+Size   |Model | Status rpi4| FPS rpi4
+  --- | --- | --- | ---
+? |ssd_mobilenet_v3_large_coco
+? |ssd_mobilenet_v3_small_coco
+
+### Pixel4 Edge TPU models
+
+Size   |Model | Status rpi4| FPS rpi4
+  --- | --- | --- | ---
+?|ssd_mobilenet_edgetpu_coco
+
 #### Kitti-trained models from [Kitti dataset](http://www.cvlibs.net/datasets/kitti/)
 2 Classes
 
