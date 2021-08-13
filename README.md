@@ -133,3 +133,7 @@ AVA is a project that provides audiovisual annotations of video for improving ou
 Size   |Model | Status rpi4| FPS rpi4
   --- | --- | --- | ---
 565MB|faster_rcnn_resnet101_ava_v2.1_2018_04_30|**FAILED (bad alloc)**
+
+
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+
